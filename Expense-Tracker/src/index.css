@@ -1,34 +1,130 @@
-.App {
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-.input-section input {
-    padding: 8px;
-    margin: 5px;
-}
-
-.input-section button {
-    padding: 8px 16px;
-    margin-left: 5px;
-}
-
-.expenses-list {
-    margin-top: 20px;
-}
-
-.expenses-list ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.expenses-list li {
+.main-content {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.total-expense {
-    margin-top: 20px;
-    font-weight: bold;
+.income {
+    width: 300px;
+    height: 350px;
+    border-top: 5px solid rgb(0, 81, 255);
+    border-right: 2px solid #e0dcdc;
+    border-bottom: 2px solid #e0dcdc;
+    border-left: 2px solid #e0dcdc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #dfd4d4;
+}
+
+.income h4 {
+    color: rgb(0, 81, 255);
+}
+
+.income span,
+.expense span,
+.expense-tracker .balance {
+    color: rgb(50, 237, 75);
+}
+
+.expense h4 {
+    color: rgb(255, 55, 0);
+}
+
+
+.income h4,
+.expense h4 {
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.expense {
+    width: 300px;
+    height: 350px;
+    border-top: 5px solid rgb(255, 55, 0);
+    border-right: 2px solid #e0dcdc;
+    border-bottom: 2px solid #e0dcdc;
+    border-left: 2px solid #e0dcdc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #dfd4d4;
+}
+
+.expense-tracker {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    height: auto;
+    border-top: 5px solid rgb(255, 55, 0);
+    border-right: 2px solid #e0dcdc;
+    border-bottom: 2px solid #e0dcdc;
+    border-left: 2px solid #e0dcdc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #dfd4d4;
+}
+
+.expense-tracker h2 {
+    margin-top: 40px;
+    margin-bottom: -20px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.expense-tracker h3 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content{
+    border-bottom: 2px solid black;
+}
+.spans {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.btns {
+    margin-right: 40px;
+    width: 100px;
+    display: flex;
+}
+.btns button{
+    border: none;
+    background-color: transparent;
+    font-size: 26px;
+
+}
+.plus{
+    color: rgb(50, 237, 75);
+}
+.minus{
+    color: rgb(255, 55, 0);
+}
+
+.delete{
+    border: none;
+    height: 30px;
+    width: 80px;
+}
+
+.expense-tracker input,
+.expense-tracker .add-item {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.expense-tracker input{
+    
+    width: 700px;
+    padding: 10px;
+}
+
+
+.add-item {
+    height: 35px;
+    width: 140px;
+    border: 3px solid rgb(0, 81, 255);
+    border-radius: 6px;
+    color: rgb(0, 81, 255);
 }
