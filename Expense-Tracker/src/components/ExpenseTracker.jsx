@@ -33,7 +33,7 @@ const ExpenseTracker = () => {
         ? { ...expense, amount: expense.amount + increment }
         : expense
     );
-  
+
     updatedExpenses.forEach((expense) => {
       addTransaction(expense);
     });
@@ -58,37 +58,42 @@ const ExpenseTracker = () => {
               expenses.reduce((acc, expense) => acc + expense.amount, 0)}
           </span>
         </h3>
-<div className="content">
-        <ul>
-          {expenses.map((expense) => (
-            
+        <div className="content">
+          <ul>
+            {expenses.map((expense) => (
               <li
                 key={expense.id}
                 style={{ display: "flex", justifyContent: "space-between" }}
               >
                 <div className="btns">
-                  <button onClick={() => handleAmountChange(expense.id, 1)} className="plus">
+                  <button
+                    onClick={() => handleAmountChange(expense.id, 1)}
+                    className="plus"
+                  >
                     +
                   </button>
-                  <button onClick={() => handleAmountChange(expense.id, -1)} className="minus">
+                  <button
+                    onClick={() => handleAmountChange(expense.id, -1)}
+                    className="minus"
+                  >
                     -
                   </button>
-                  </div>
-                  <div className="spans">
-                <span>{expense.text} </span>
-                <span>${expense.amount}</span>
-                <span>({expense.date})</span>
+                </div>
+                <div className="spans">
+                  <span>{expense.text} </span>
+                  <span>${expense.amount}</span>
+                  <span>({expense.date})</span>
                 </div>
                 <button
                   onClick={() => deleteTransaction(expense.id)}
-                  style={{ marginRight: "10px" }} className="delete"
+                  style={{ marginRight: "10px" }}
+                  className="delete"
                 >
                   DELETE
                 </button>
               </li>
-            
-          ))}
-        </ul>
+            ))}
+          </ul>
         </div>
         <form onSubmit={handleSubmit}>
           <input

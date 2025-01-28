@@ -74,9 +74,11 @@
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
 }
-.content{
+
+.content {
     border-bottom: 2px solid black;
 }
+
 .spans {
     margin-top: 10px;
     margin-right: 10px;
@@ -88,20 +90,23 @@
     width: 100px;
     display: flex;
 }
-.btns button{
+
+.btns button {
     border: none;
     background-color: transparent;
     font-size: 26px;
 
 }
-.plus{
+
+.plus {
     color: rgb(50, 237, 75);
 }
-.minus{
+
+.minus {
     color: rgb(255, 55, 0);
 }
 
-.delete{
+.delete {
     border: none;
     height: 30px;
     width: 80px;
@@ -114,8 +119,9 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.expense-tracker input{
-    
+
+.expense-tracker input {
+
     width: 700px;
     padding: 10px;
 }
